@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'AnimeTitle.dart';
 
+// Это карточка аниме, она будет в прокручиваемом списке и содержит в себе аниме
 class AnimeCard extends StatelessWidget {
   final Anime anime;
 
   AnimeCard({required this.anime});
-
   @override
   Widget build(BuildContext context) {
     return Container(

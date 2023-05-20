@@ -32,6 +32,7 @@ class MainScreen extends StatelessWidget {
           ),
         ],
       ),
+      // Это блоки сезонов со скролом
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -48,7 +49,7 @@ class MainScreen extends StatelessWidget {
               height: 200.0,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: AnimeTitle.SummerAnimeList.length, // Здесь нужно указать количество аниме
+                itemCount: AnimeTitle.SummerAnimeList.length, // Здесь нужно получить из AnimeTitle
                 itemBuilder: (context, index) {
                   // Здесь создаем блок аниме с постером и названием
                   return AnimeCard(
